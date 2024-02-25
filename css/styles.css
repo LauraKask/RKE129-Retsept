@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Dancing+Script:wght@400..700&family=Protest+Riot&display=swap');
+
+
+.body {
+    background-color: #cea8c4; 
+    color: #462146; 
+    font-family: "Dancing Script", cursive;;
+}
+
+.header {
+    background-color: #77087a; 
+    color: #fff; 
+    padding: 10px;
+    text-align: center;
+}
+
+.nav {
+    background-color: #f1eff1; 
+    padding: 20px;
+    text-decoration-line: underline; 
+    text-decoration-color: #fff;
+}
+
+.table, td {
+    width: 75%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border: 5px solid #fffefe;
+    padding: 10px;
+    text-align: left;   
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 400px;
+  }
+
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1rem;
+}
