@@ -4,8 +4,50 @@
 .body {
     background-color: #cea8c4; 
     color: #462146; 
-    font-family: "Dancing Script", cursive;;
+    font-family: "Dancing Script", cursive;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg,  #cea8c4 0%,  #cea8c4 25%, #cea8c4 51%, #ff357f 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+    animation: AnimateBG 0s ease infinite;
 }
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.nav{
+    position: relative;
+    animation: textLeft;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes textLeft {
+    0% {left: -1000px}
+    85% {left: 50px}
+    100% {left: 0}
+}
+
 
 .header {
     background-color: #77087a; 
@@ -14,11 +56,23 @@
     text-align: center;
 }
 
+.header h1 {
+    position: relative; 
+    animation: header;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
 .nav {
     background-color: #f1eff1; 
     padding: 20px;
     text-decoration-line: underline; 
     text-decoration-color: #fff;
+}
+
+@keyframes header {
+    0% {top: -100px}
+    100% {top: 10px}
 }
 
 .table, td {
@@ -30,12 +84,15 @@
     text-align: left;   
 }
 
-img {
+.img {
+    position: relative;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
     width: 400px;
+    animation: slidein;
   }
+
 
 .footer {
     margin-top: 30px;
